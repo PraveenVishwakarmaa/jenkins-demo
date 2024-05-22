@@ -7,7 +7,7 @@ pipeline{
         stage("Test"){
             steps{
                 // mvn test
-                bat "mvn test"
+                sh "mvn test"
                 echo "========executing A========"
             }
             
@@ -15,7 +15,7 @@ pipeline{
         stage("Build"){
             steps{
                 // mvn package
-                bat "mvn package"
+                sh "mvn package"
                 echo "========executing A========"
             }
             
