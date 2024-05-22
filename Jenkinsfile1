@@ -13,12 +13,12 @@ pipeline{
         }
         stage("C"){
             steps{
-                sh "date"
+                echo "date"
             } 
         }
         stage("D"){
             steps{
-                powershell "date"
+                echo "date"
             } 
         }
         stage("E"){
